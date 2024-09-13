@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bø Industribedrift - Hjem</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -28,34 +29,58 @@
         </nav>
     </div>
 </header>
+
+<!-- Hero section with image slider -->
 <section class="hero">
-    <div class="container">
-        <h2>Velkommen til Bø Industribedrift</h2>
-        <p>Din partner for kontorrekvisita, spesialutstyr og maskinutleie.</p>
-        <img src="https://via.placeholder.com/1200x600" alt="Hero Image">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600" alt="Slide 3">
+            </div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
     </div>
 </section>
+
+<!-- Våre Tjenester section with image placeholders -->
 <section class="product-intro container">
     <h2>Våre Tjenester</h2>
     <div class="service">
+        <img src="https://via.placeholder.com/400x300" alt="Kontorrekvisita">
         <h3>Kontorrekvisita</h3>
         <p>Effektiv levering av kontorrekvisita til bedrifter.</p>
-        <a href="kontorrekvisita.html">Les mer</a>
+        <a href="kontorrekvisita.html" class="btn">Les mer</a>
     </div>
     <div class="service">
+        <img src="https://via.placeholder.com/400x300" alt="Spesialutstyr">
         <h3>Spesialutstyr</h3>
         <p>Installasjon av prosjektorer, overvåkningssystemer, og mer.</p>
-        <a href="spesialutstyr.html">Les mer</a>
+        <a href="spesialutstyr.html" class="btn">Les mer</a>
     </div>
     <div class="service">
+        <img src="https://via.placeholder.com/400x300" alt="Maskinutleie">
         <h3>Maskinutleie</h3>
         <p>Leie av maskiner som grassklippere og snøfresere.</p>
-        <a href="maskinutleie.html">Les mer</a>
+        <a href="maskinutleie.html" class="btn">Les mer</a>
     </div>
 </section>
+
 <footer>
-    <p>&copy; 2024 Bø Industribedrift</p>
-    <button id="scrollToTop">Til Toppen</button>
+    <div class="container">
+        <p>&copy; 2024 Bø Industribedrift | <a href="personvern.html">Personvern</a></p>
+        <div class="social-media">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">LinkedIn</a>
+        </div>
+        <button id="scrollToTop">Til Toppen</button>
+    </div>
 </footer>
 <script src="script.js"></script>
 </body>
