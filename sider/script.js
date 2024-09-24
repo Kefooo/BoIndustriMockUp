@@ -1,29 +1,36 @@
 let slideIndex = 0;
-showSlides();
+const slides = document.querySelectorAll(".slide");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
 
-// Slider functionality
+// Function to show slides
 function showSlides() {
-    let slides = document.querySelectorAll('.slide');
     slides.forEach((slide, index) => {
-        slide.style.display = 'none';
+        slide.style.display = "none";
+        slide.classList.remove("active");
     });
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    slides[slideIndex].style.display = "block";
+    slides[slideIndex].classList.add("active");
 }
 
-// Prev/Next controls
-document.querySelector('.prev').addEventListener('click', function() {
-    plusSlides(-1);
-});
-
-document.querySelector('.next').addEventListener('click', function() {
-    plusSlides(1);
-});
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+// Function to go to the next slide
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlides();
 }
+
+// Function to go to the previous slide
+function prevSlide() {
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+    showSlides();
+}
+
+// Event listeners for navigation buttons
+prev.addEventListener("click", prevSlide);
+next.addEventListener("click", nextSlide);
+
+// Automatically change slides every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Start slider on page load
+showSlides();

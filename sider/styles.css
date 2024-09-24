@@ -1,5 +1,5 @@
 /* Basic Reset */
-body, h1, h2, h3, p, form, input, textarea, button {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,9 +13,57 @@ body {
     padding-top: 60px; /* Space for fixed header */
 }
 
-/* Header */
+/* Container for consistent width */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Header & Navigation */
 header {
-    background: #1f1f1f;
+    background: #282828;
     color: #fff;
     padding: 15px 0;
     position: fixed;
@@ -26,21 +74,15 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-h1 {
-    font-size: 28px;
-    font-weight: 500;
-    margin: 0;
+.logo {
+    width: 150px;
+    height: auto;
 }
 
 nav ul {
@@ -56,10 +98,8 @@ nav ul li {
 
 nav a {
     color: #fff;
-    text-decoration: none;
     padding: 10px 20px;
     display: block;
-    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -76,10 +116,9 @@ nav .dropdown-menu {
     background-color: #333;
     top: 100%;
     left: 0;
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
-    z-index: 999;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -89,7 +128,6 @@ nav .dropdown-menu li {
 
 nav .dropdown-menu a {
     padding: 10px;
-    text-align: left;
 }
 
 nav .dropdown:hover .dropdown-menu {
@@ -105,34 +143,35 @@ nav .dropdown:hover .dropdown-menu {
     cursor: pointer;
 }
 
-/* Hero Section with Image Slider */
+/* Hero Section with Slider */
 .hero {
     position: relative;
     overflow: hidden;
+    padding: 100px 20px;
 }
 
 .slider {
     position: relative;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100%; /* Ensure slider does not exceed container width */
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 8px; /* Round the corners of the slider */
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%;
+    width: 100%; /* Full width of the slider container */
 }
 
 .slide {
-    min-width: 100%;
-    box-sizing: border-box;
+    min-width: 100%; /* Each slide takes up full width of the slider */
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
+    width: 100%; /* Make image width 100% of the container */
+    height: 400px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    display: block; /* Removes any extra space below the image */
 }
 
 .prev, .next {
@@ -165,18 +204,12 @@ nav .dropdown:hover .dropdown-menu {
     opacity: 1;
 }
 
-/* Våre Tjenester section */
+/* Våre Tjenester Section */
 .product-intro {
     padding: 50px 20px;
     background: #fff;
     margin-top: 40px;
     border-radius: 8px;
-}
-
-.product-intro h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .service {
@@ -201,21 +234,7 @@ nav .dropdown:hover .dropdown-menu {
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
+/* Footer Section */
 footer {
     background: #1f1f1f;
     color: #fff;
@@ -226,44 +245,18 @@ footer {
 
 footer a {
     color: #007bff;
-    text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer .social-media {
-    margin-top: 10px;
-}
-
-.social-icon {
-    color: #fff;
-    margin: 0 10px;
-}
-
-.social-icon:hover {
-    color: #007bff;
-}
-
-/* Scroll to Top */
 #scrollToTop {
     background: #007bff;
     color: #fff;
-    border: none;
     padding: 10px;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
 }
 
-#scrollToTop:hover {
-    background: #0056b3;
-}
-
-/* Responsive Styles */
+/* Media Queries */
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -279,15 +272,11 @@ footer .social-media {
         display: none;
     }
 
-    nav .menu-toggle {
-        display: block;
-    }
-
     nav.active ul {
         display: flex;
     }
 
-    .hero {
-        padding: 100px 20px;
+    .menu-toggle {
+        display: block;
     }
 }
