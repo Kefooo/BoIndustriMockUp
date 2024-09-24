@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ae987b-9b23-4541-877e-f00ee6a5e5ee" name="Changes" comment="Index design oppdatering">
+    <list default="true" id="16ae987b-9b23-4541-877e-f00ee6a5e5ee" name="Changes" comment="Fikset Navbar på alle sider">
+      <change afterPath="$PROJECT_DIR$/sider/bilder/Slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sider/bilder/Slider3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilder/Maskinutleie.png" beforeDir="false" afterPath="$PROJECT_DIR$/sider/bilder/Maskinutleie.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilder/Spesialutstyr.png" beforeDir="false" afterPath="$PROJECT_DIR$/sider/bilder/Spesialutstyr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sider/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sider/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/sider/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/kontaktoss.html" beforeDir="false" afterPath="$PROJECT_DIR$/sider/kontaktoss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/omoss.html" beforeDir="false" afterPath="$PROJECT_DIR$/sider/omoss.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sider/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sider/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -95,7 +98,7 @@
       <workItem from="1725788237601" duration="7239000" />
       <workItem from="1725862348082" duration="6063000" />
       <workItem from="1726220315794" duration="29199000" />
-      <workItem from="1727176736514" duration="1211000" />
+      <workItem from="1727176736514" duration="4260000" />
     </task>
     <task id="LOCAL−00001" summary="Index design oppdatering">
       <option name="closed" value="true" />
@@ -104,7 +107,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1726223814015</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Fikset Navbar på alle sider">
+      <option name="closed" value="true" />
+      <created>1727178326941</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1727178326941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Index design oppdatering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index design oppdatering" />
+    <MESSAGE value="Fikset Navbar på alle sider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fikset Navbar på alle sider" />
   </component>
 </project>

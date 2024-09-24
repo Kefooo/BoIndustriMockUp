@@ -1,282 +1,345 @@
 /* Basic Reset */
+/* Grunnleggende tilbakestilling for å fjerne standard margin og padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Fjern standard margin */
+    padding: 0; /* Fjern standard padding */
+    box-sizing: border-box; /* Inkluder padding og border i elementets totale bredde og høyde */
 }
 
+/* Body Styles */
+/* Stiler for hele siden */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding-top: 60px; /* Space for fixed header */
+    font-family: 'Roboto', sans-serif; /* Angi skrifttype */
+    line-height: 1.6; /* Angi linjehøyde for bedre lesbarhet */
+    background-color: #f4f4f4; /* Lys grå bakgrunnsfarge */
+    color: #333; /* Mørk grå tekstfarge */
+    padding-top: 60px; /* Rom for fast header */
 }
 
 /* Container for consistent width */
+/* Container for å opprettholde en konsistent bredde på innholdet */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 80%; /* Bredde på 80% av skjermens bredde */
+    margin: 0 auto; /* Sentere containeren horisontalt */
 }
 
+/* Link Styles */
+/* Stiler for lenker */
 a {
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    text-decoration: none; /* Fjern understrekning fra lenker */
+    transition: background-color 0.3s ease; /* Legg til overgangseffekt for bakgrunnsfarge */
 }
 
 /* Typography */
+/* Typografistiler for overskrifter */
 h1, h2, h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-weight: 500; /* Angi skrifttypevekt */
+    margin-bottom: 20px; /* Avstand under overskrifter */
 }
 
-h1 {
-    font-size: 28px;
-}
-
+/* Stiler for h2 overskrifter */
 h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 40px;
+    font-size: 28px; /* Angi skriftstørrelse */
+    text-align: center; /* Senter tekst */
+    margin-bottom: 40px; /* Avstand under h2 */
 }
 
+/* Stiler for h3 overskrifter */
 h3 {
-    font-size: 24px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #0056b3;
+    font-size: 24px; /* Angi skriftstørrelse */
+    margin-bottom: 20px; /* Avstand under h3 */
 }
 
 /* Header & Navigation */
+/* Stiler for header og navigasjon */
 header {
-    background: #282828;
-    color: #fff;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #282828; /* Mørk bakgrunnsfarge for header */
+    color: #fff; /* Hvit tekstfarge */
+    padding: 15px 0; /* Rom i header */
+    position: fixed; /* Fast plassering */
+    width: 100%; /* Fyll hele bredden */
+    top: 0; /* Plassering på toppen av siden */
+    left: 0; /* Ingen venstremargin */
+    z-index: 1000; /* Høy z-index for å være over annet innhold */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Legg til skyggeeffekt */
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Bruk flexbox for å arrangere innhold */
+    justify-content: space-between; /* Plasser innhold på hver side */
+    align-items: center; /* Sentrer innhold vertikalt */
 }
 
 .logo {
-    width: 150px;
-    height: auto;
+    width: 150px; /* Bredde på logo */
+    height: auto; /* Automatisk høyde for å bevare proporsjoner */
 }
 
+/* Navigation Styles */
+/* Stiler for navigasjonsmenyen */
 nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Fjern standard punktmerking */
+    display: flex; /* Bruk flexbox for navigasjonsmeny */
+    padding: 0; /* Ingen padding */
+    margin: 0; /* Ingen margin */
 }
 
 nav ul li {
-    position: relative;
+    position: relative; /* Relativ posisjonering for dropdown */
 }
 
+/* Stiler for lenker i navigasjonen */
 nav a {
-    color: #fff;
-    padding: 10px 20px;
-    display: block;
+    color: #fff; /* Hvit tekstfarge for lenker */
+    padding: 10px 20px; /* Rom rundt lenketekst */
+    display: block; /* Få lenker til å fungere som blokker */
 }
 
+/* Hover effekt for lenker */
 nav a:hover {
-    background-color: #444;
+    background-color: #444; /* Mørkere bakgrunn ved hover */
 }
 
+/* Aktiv lenke stil */
 nav .active {
-    background-color: #007bff;
+    background-color: #007bff; /* Blå bakgrunn for aktiv lenke */
 }
 
+/* Dropdown meny */
 nav .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: none; /* Skjul dropdown-menyen som standard */
+    position: absolute; /* Absolutt posisjonering for dropdown */
+    background-color: #333; /* Mørk bakgrunn for dropdown */
+    top: 100%; /* Plasser den under hovedmenyen */
+    left: 0; /* Ingen venstremargin */
+    list-style: none; /* Fjern punktmerking */
+    padding: 0; /* Ingen padding */
+    margin: 0; /* Ingen margin */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Legg til skygge */
 }
 
+/* Stiler for dropdown-menyens elementer */
 nav .dropdown-menu li {
-    width: 200px;
+    width: 200px; /* Bredde på dropdown-elementer */
 }
 
 nav .dropdown-menu a {
-    padding: 10px;
+    padding: 10px; /* Rom rundt lenketekst i dropdown */
 }
 
+/* Vis dropdown-meny ved hover */
 nav .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block; /* Vis menyen ved hover */
 }
 
+/* Meny-toggle for mobilvisning */
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
+    display: none; /* Skjul meny-toggle som standard */
+    background: none; /* Ingen bakgrunn */
+    border: none; /* Ingen kantlinje */
+    color: #fff; /* Hvit farge for knappen */
+    font-size: 24px; /* Størrelse på meny-toggle */
+    cursor: pointer; /* Håndmarkør ved hover */
 }
 
-/* Hero Section with Slider */
+/* Contact Section */
+/* Stiler for kontaktskjemaet */
+.contact {
+    background-color: #fff; /* Hvit bakgrunn for kontaktskjema */
+    padding: 40px; /* Rom i kontaktskjema */
+    margin-top: 40px; /* Avstand over kontaktskjema */
+    border-radius: 8px; /* Runde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legg til skyggeeffekt */
+}
+
+/* Wrapper for skjema og kart */
+.form-map-wrapper {
+    display: flex; /* Bruk flexbox for layout */
+    gap: 20px; /* Avstand mellom elementer */
+    flex-wrap: wrap; /* Tillat elementene å bryte til neste linje */
+    justify-content: space-between; /* Plasser elementer med lik avstand */
+}
+
+/* Stiler for kontaktskjema */
+.contact-form {
+    flex: 1; /* La skjemaet ta opp tilgjengelig plass */
+    min-width: 300px; /* Minimum bredde */
+    display: flex; /* Bruk flexbox for skjemaelementer */
+    flex-direction: column; /* Arranger elementer i kolonne */
+}
+
+.contact-form label {
+    font-size: 16px; /* Størrelse på label */
+    margin-bottom: 8px; /* Avstand under label */
+}
+
+/* Stiler for input-felt og textarea */
+.contact-form input, .contact-form textarea {
+    padding: 10px; /* Rom i input-felt */
+    margin-bottom: 20px; /* Avstand under input-felt */
+    border: 1px solid #ccc; /* Grå kantlinje */
+    border-radius: 4px; /* Runde hjørner */
+    font-size: 16px; /* Størrelse på tekst */
+    width: 100%; /* Fyll hele bredden */
+}
+
+/* Stiler for knappene i kontaktskjema */
+.contact-form button {
+    padding: 12px; /* Rom i knappene */
+    background-color: #007bff; /* Blå bakgrunn for knappen */
+    color: #fff; /* Hvit tekstfarge */
+    border: none; /* Ingen kantlinje */
+    border-radius: 4px; /* Runde hjørner */
+    font-size: 16px; /* Størrelse på tekst */
+    cursor: pointer; /* Håndmarkør ved hover */
+}
+
+/* Hover effekt for knapper */
+.contact-form button:hover {
+    background-color: #0056b3; /* Mørkere blå ved hover */
+}
+
+/* Map container styling */
+/* Stiler for kartcontainer */
+.map-container {
+    flex: 1; /* La kartet ta opp tilgjengelig plass */
+    min-width: 300px; /* Minimum bredde */
+}
+
+/* Stiler for iframe i kartet */
+.map-container iframe {
+    width: 100%; /* Fyll hele bredden */
+    height: 300px; /* Fast høyde på kartet */
+    border: 0; /* Ingen kantlinje */
+    border-radius: 4px; /* Runde hjørner */
+}
+
+/* Slider Section */
+/* Stiler for slider-seksjonen */
 .hero {
-    position: relative;
-    overflow: hidden;
-    padding: 100px 20px;
+    position: relative; /* Relativ posisjon for slider */
+    overflow: hidden; /* Skjul overflødig innhold */
+    padding: 100px 20px; /* Rom i slider */
 }
 
 .slider {
-    position: relative;
-    max-width: 100%; /* Ensure slider does not exceed container width */
-    overflow: hidden; /* Hide overflow content */
-    border-radius: 8px; /* Round the corners of the slider */
+    position: relative; /* Relativ posisjon for slider */
+    max-width: 100%; /* Sikre at slider ikke overskrider containerbredden */
+    overflow: hidden; /* Skjul overflødig innhold */
+    border-radius: 8px; /* Runde hjørner */
 }
 
+/* Stiler for lysbildene */
 .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* Full width of the slider container */
+    display: flex; /* Bruk flexbox for lysbildene */
+    transition: transform 0.5s ease-in-out; /* Legg til overgang for lysbildebytte */
+    width: 100%; /* Full bredde av slider-container */
 }
 
 .slide {
-    min-width: 100%; /* Each slide takes up full width of the slider */
+    min-width: 100%; /* Hvert lysbilde tar opp full bredde av slider */
 }
 
+/* Stiler for bilder i lysbildene */
 .slide img {
-    width: 100%; /* Make image width 100% of the container */
-    height: 400px; /* Fixed height for images */
-    object-fit: cover; /* Ensures images cover the container without distortion */
-    display: block; /* Removes any extra space below the image */
+    width: 100%; /* Gjør bildet 100% av containeren */
+    height: 400px; /* Fast høyde for bilder */
+    object-fit: cover; /* Sørger for at bildene dekker containeren uten forvrengning */
+    display: block; /* Fjerner ekstra plass under bildet */
 }
 
+/* Navigasjonsknapper for slider */
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 16px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 24px;
+    position: absolute; /* Absolutt posisjonering for knapper */
+    top: 50%; /* Plasser knappene vertikalt midtstilt */
+    transform: translateY(-50%); /* Juster for å sentrere */
+    background-color: rgba(0, 0, 0, 0.5); /* Halvtransparent bakgrunn */
+    color: white; /* Hvit tekstfarge */
+    padding: 16px; /* Rom rundt knappene */
+    cursor: pointer; /* Håndmarkør ved hover */
+    border-radius: 50%; /* Runde knapper */
+    font-size: 24px; /* Størrelse på teksten i knappene */
 }
 
 .prev {
-    left: 10px;
+    left: 10px; /* Plassering av venstre knapp */
 }
 
 .next {
-    right: 10px;
+    right: 10px; /* Plassering av høyre knapp */
 }
 
 /* Fade-in animation */
+/* Stiler for fade-in animasjon */
 .fade {
-    opacity: 0;
-    transition: opacity 1.5s;
+    opacity: 0; /* Start med usynlig */
+    transition: opacity 1.5s; /* Legg til overgang for synlighet */
 }
 
 .active {
-    opacity: 1;
-}
-
-/* Våre Tjenester Section */
-.product-intro {
-    padding: 50px 20px;
-    background: #fff;
-    margin-top: 40px;
-    border-radius: 8px;
-}
-
-.service {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.service img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.service h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.service p {
-    margin-bottom: 20px;
+    opacity: 1; /* Aktiv lysbilde er synlig */
 }
 
 /* Footer Section */
+/* Stiler for footer-seksjonen */
 footer {
-    background: #1f1f1f;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    background: #1f1f1f; /* Mørk bakgrunn for footer */
+    color: #fff; /* Hvit tekstfarge */
+    text-align: center; /* Sentrer teksten */
+    padding: 20px 0; /* Rom i footer */
+    margin-top: 40px; /* Avstand over footer */
 }
 
-footer a {
-    color: #007bff;
-}
-
+/* Scroll to Top Button */
+/* Stiler for "Scroll to Top"-knappen */
 #scrollToTop {
-    background: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background: #007bff; /* Blå bakgrunn for knappen */
+    color: #fff; /* Hvit tekstfarge */
+    padding: 10px; /* Rom i knappen */
+    border: none; /* Ingen kantlinje */
+    border-radius: 4px; /* Runde hjørner */
+    cursor: pointer; /* Håndmarkør ved hover */
+}
+
+/* Hover effekt for "Scroll to Top"-knappen */
+#scrollToTop:hover {
+    background-color: #0056b3; /* Mørkere blå ved hover */
 }
 
 /* Media Queries */
+/* Responsiv design for skjermer mindre enn 768px */
 @media (max-width: 768px) {
+    .form-map-wrapper {
+        flex-direction: column; /* Endre retning til kolonne for mobilvisning */
+    }
+
     .container {
-        width: 90%;
+        width: 90%; /* Øk bredden på containeren for mobilvisning */
     }
 
     .header-content {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Endre retning på headerinnholdet til kolonne */
+        align-items: flex-start; /* Venstrejustere innholdet */
     }
 
     nav ul {
-        flex-direction: column;
-        display: none;
+        flex-direction: column; /* Endre retning til kolonne for mobilvisning */
+        display: none; /* Skjul navigasjonsmeny som standard */
     }
 
     nav.active ul {
-        display: flex;
+        display: flex; /* Vis menyen når aktiv */
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Vis meny-toggle for mobilvisning */
     }
+}
+
+/* Justering av bildet i Om Oss-seksjonen */
+.about-image img {
+    max-width: 100%; /* Maksimal bredde til 100% av forelderen */
+    height: auto; /* Oppretthold høyde-forholdet */
+    border-radius: 8px; /* Legg til runde hjørner, hvis ønskes */
+    margin-top: 20px; /* Legg til toppmargin for avstand */
 }
