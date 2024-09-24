@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16ae987b-9b23-4541-877e-f00ee6a5e5ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="16ae987b-9b23-4541-877e-f00ee6a5e5ee" name="Changes" comment="Fikset Navbar på alle sider">
+      <change afterPath="$PROJECT_DIR$/sider/bilder/Slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sider/bilder/Slider3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sider/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/kontaktoss.html" beforeDir="false" afterPath="$PROJECT_DIR$/sider/kontaktoss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/omoss.html" beforeDir="false" afterPath="$PROJECT_DIR$/sider/omoss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sider/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,42 +23,67 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kefooo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kefooo/BoIndustriMockUp.git&quot;,
+    &quot;accountId&quot;: &quot;c9b7bee8-0506-4faf-9795-ada0ff1b745c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2lmbXKz9tBqRfx5vj2OQsTqJdP7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Design&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\sider\bilder" />
+      <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\sider" />
+      <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\bilder" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
       </set>
     </attachedChunks>
   </component>
@@ -63,11 +95,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725788236530</updated>
-      <workItem from="1725788237601" duration="6989000" />
+      <workItem from="1725788237601" duration="7239000" />
+      <workItem from="1725862348082" duration="6063000" />
+      <workItem from="1726220315794" duration="29199000" />
+      <workItem from="1727176736514" duration="4260000" />
     </task>
+    <task id="LOCAL−00001" summary="Index design oppdatering">
+      <option name="closed" value="true" />
+      <created>1726223814014</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1726223814015</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Fikset Navbar på alle sider">
+      <option name="closed" value="true" />
+      <created>1727178326941</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1727178326941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Index design oppdatering" />
+    <MESSAGE value="Fikset Navbar på alle sider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fikset Navbar på alle sider" />
   </component>
 </project>

@@ -1,0 +1,69 @@
+/* override.css */
+
+/* Justering av header-padding for å legge til mer plass */
+/* Øk padding i headeren */
+header {
+    padding: 20px 0; /* Øk header-padding */
+}
+
+/* Justering av skriftstørrelse for h1 */
+/* Øk skriftstørrelsen på h1-elementer */
+h1 {
+    font-size: 32px; /* Øk h1-størrelse */
+}
+
+/* Midtjustering av produktseksjonens overskrift */
+/* Midtstill overskriften i produktseksjonen */
+.product-intro h2 {
+    text-align: center; /* Senter tekst */
+}
+
+/* Stiler for serviceboksene */
+/* Stil for serviceboksene */
+.service {
+    background-color: #ffffff; /* Sørg for at serviceboksene har hvit bakgrunn */
+    border-radius: 8px; /* Legg til runde hjørner */
+    padding: 20px; /* Legg til padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Legg til en subtil skygge */
+    transition: transform 0.3s; /* Legg til en jevn skaleringseffekt */
+}
+
+/* Stiler for hover-effekt på serviceboksene */
+/* Forstørr litt ved hover */
+.service:hover {
+    transform: scale(1.05); /* Litt forstørrelse ved hover */
+}
+
+/* Justering av bilder i service-seksjonen */
+/* Stiler for bilder i service-boksene */
+.service img {
+    max-width: 80%; /* Begrens bildets bredde til 80% av forelderen */
+    height: auto; /* Oppretthold forholdet */
+    margin: 0 auto; /* Senter bildet */
+    display: block; /* Fjerner ekstra plass under bildet */
+}
+
+/* Stiler for knapper i service-seksjonen */
+/* Stiler for knapper */
+.btn {
+    display: inline-block; /* Vis som inline blokk */
+    background-color: #007bff; /* Bakgrunnsfarge for knappen */
+    color: #fff; /* Tekstfarge på knappen */
+    padding: 10px 15px; /* Padding for knappene */
+    border-radius: 4px; /* Runde hjørner for knappene */
+    text-align: center; /* Senter tekst i knappen */
+}
+
+/* Hover-effekt for knappene */
+/* Mørkere nyanse ved hover */
+.btn:hover {
+    background-color: #0056b3; /* Mørkere nyanse ved hover */
+}
+
+/* Justering av kartcontaineren */
+/* Stiler for kartcontaineren */
+.map-container {
+    border: 1px solid #ccc; /* Legg til en kantlinje */
+    border-radius: 8px; /* Runde hjørner */
+    overflow: hidden; /* Sørg for at det ikke er overflyt */
+}

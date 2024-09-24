@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bø Industribedrift - Hjem</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Original CSS -->
+    <link rel="stylesheet" href="override.css"> <!-- New CSS for overrides -->
 </head>
 <body>
 <header>
     <div class="container header-content">
-        <h1>Bø Industribedrift</h1>
+        <a href="index.html">
+            <img src="bilder/BøIndustriLogo.png" alt="Bø Industribedrift" class="logo">
+        </a>
         <nav>
             <button class="menu-toggle">☰</button>
             <ul>
@@ -28,35 +31,52 @@
         </nav>
     </div>
 </header>
+
 <section class="hero">
-    <div class="container">
-        <h2>Velkommen til Bø Industribedrift</h2>
-        <p>Din partner for kontorrekvisita, spesialutstyr og maskinutleie.</p>
-        <img src="https://via.placeholder.com/1200x600" alt="Hero Image">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="bilder/Slider1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="bilder/Slider2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="bilder/Slider3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
     </div>
 </section>
+
 <section class="product-intro container">
     <h2>Våre Tjenester</h2>
     <div class="service">
+        <img src="bilder/Kontor.jpg" alt="Kontorrekvisita">
         <h3>Kontorrekvisita</h3>
         <p>Effektiv levering av kontorrekvisita til bedrifter.</p>
-        <a href="kontorrekvisita.html">Les mer</a>
+        <a href="kontorrekvisita.html" class="btn">Les mer</a>
     </div>
     <div class="service">
+        <img src="bilder/Spesialutstyr.png" alt="Spesialutstyr">
         <h3>Spesialutstyr</h3>
         <p>Installasjon av prosjektorer, overvåkningssystemer, og mer.</p>
-        <a href="spesialutstyr.html">Les mer</a>
+        <a href="spesialutstyr.html" class="btn">Les mer</a>
     </div>
     <div class="service">
+        <img src="bilder/Maskinutleie.png" alt="Maskinutleie">
         <h3>Maskinutleie</h3>
         <p>Leie av maskiner som grassklippere og snøfresere.</p>
-        <a href="maskinutleie.html">Les mer</a>
+        <a href="maskinutleie.html" class="btn">Les mer</a>
     </div>
 </section>
+
 <footer>
     <p>&copy; 2024 Bø Industribedrift</p>
     <button id="scrollToTop">Til Toppen</button>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
