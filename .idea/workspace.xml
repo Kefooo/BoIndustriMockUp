@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="16ae987b-9b23-4541-877e-f00ee6a5e5ee" name="Changes" comment="Oppdatering i CSSen. Fikset noen bugs. Fjernet og la til nye bilder.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoIndustriMockUp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/kontaktoss.html" beforeDir="false" afterPath="$PROJECT_DIR$/kontaktoss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/kontorrekvisita.html" beforeDir="false" afterPath="$PROJECT_DIR$/kontorrekvisita.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/maskinutleie.html" beforeDir="false" afterPath="$PROJECT_DIR$/maskinutleie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/omoss.html" beforeDir="false" afterPath="$PROJECT_DIR$/omoss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/override.css" beforeDir="false" afterPath="$PROJECT_DIR$/override.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/produkter.html" beforeDir="false" afterPath="$PROJECT_DIR$/produkter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/spesialutstyr.html" beforeDir="false" afterPath="$PROJECT_DIR$/spesialutstyr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sider/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +79,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp" />
+      <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\BoIndustriMockUp" />
       <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\sider\bilder" />
       <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\sider" />
       <recent name="C:\Users\heyit\WebstormProjects\BøIndustriMockUp\bilder" />
@@ -90,7 +104,7 @@
       <workItem from="1725788237601" duration="7239000" />
       <workItem from="1725862348082" duration="6063000" />
       <workItem from="1726220315794" duration="29199000" />
-      <workItem from="1727176736514" duration="5185000" />
+      <workItem from="1727176736514" duration="6740000" />
     </task>
     <task id="LOCAL−00001" summary="Index design oppdatering">
       <option name="closed" value="true" />
